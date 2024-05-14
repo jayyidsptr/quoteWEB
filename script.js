@@ -26,8 +26,6 @@ function fetchQuote() {
         .catch(error => {
             if (error.message === 'Kategori tidak ditemukan.') {
                 display.textContent = 'Tidak ada kutipan ditemukan untuk kategori ini.';
-            } else if (error.message === 'Terjadi kesalahan pada server.') {
-                display.textContent = 'Terjadi kesalahan saat mengambil kutipan.';
             } else {
                 display.textContent = error.message;
             }
