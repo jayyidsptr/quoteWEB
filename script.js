@@ -5,7 +5,6 @@ function fetchQuote() {
     // Membuat permintaan ke server untuk mendapatkan kutipan
     fetch(`https://quotes-api-beta.vercel.app/api/quotes/${category}`, {
         method: 'GET',
-        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json',
         },
