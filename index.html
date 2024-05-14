@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi API Kutipan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Dokumentasi API Kutipan</h1>
+    <p>Gunakan API ini untuk mendapatkan kutipan berdasarkan kategori yang berbeda. Berikut adalah cara menggunakan API:
+    </p>
+    <ul>
+        <li><strong>GET /api/quotes/:category</strong> - Mendapatkan kutipan berdasarkan kategori. Kategori yang
+            tersedia adalah:
+            <ul>
+                <li><code>life</code> - Kutipan tentang kehidupan</li>
+                <li><code>love</code> - Kutipan tentang cinta</li>
+                <li><code>motivation</code> - Kutipan motivasional</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Contoh: Mengakses <code>/api/quotes/life</code> akan mengembalikan kutipan tentang kehidupan.</p>
+    <select id="categorySelect">
+        <option value="life">Kehidupan</option>
+        <option value="love">Cinta</option>
+        <option value="motivation">Motivasi</option>
+    </select>
+    <button onclick="fetchQuote()">Dapatkan Kutipan</button>
+    <p id="quoteDisplay">Pilih kategori dan tekan tombol untuk melihat kutipan.</p>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> PRA Code. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
