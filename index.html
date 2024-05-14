@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dokumentasi API Kutipan</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,6 @@
     </select>
     <button onclick="fetchQuote()">Dapatkan Kutipan</button>
     <p id="quoteDisplay">Pilih kategori dan tekan tombol untuk melihat kutipan.</p>
-    <script src="script.js"></script>
     <footer>
         <p>&copy; <span id="currentYear"></span> PRA Code. All rights reserved.</p>
     </footer>
@@ -38,5 +38,6 @@
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>
+<script src="script.js"></script>
 
 </html>
